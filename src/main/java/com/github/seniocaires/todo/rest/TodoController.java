@@ -21,7 +21,7 @@ import com.github.seniocaires.todo.repository.TodoRepository;
 
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://seniocaires.github.io/"})
 public class TodoController {
 
 	@Autowired
