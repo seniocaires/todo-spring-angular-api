@@ -13,6 +13,6 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") //
         .allowedOriginPatterns("http://localhost:4200", "https://seniocaires.github.io/") //
-        .allowedMethods("POST", "GET", "PUT", "DELETE", "PATCH", "OPTIONS");// <- assim permite de qualquer origem, troque "/**" pelo seu dominio por exemplo "http://meudominio.com"
+        .allowedMethods("POST", "GET", "PUT", "DELETE", "PATCH", "OPTIONS");
     }
 }
