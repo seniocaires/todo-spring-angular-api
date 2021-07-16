@@ -48,6 +48,7 @@ public class TodoController {
 		repository.deleteById(id);
 	}
 
+	@CrossOrigin(origins = {"http://localhost:4200", "https://seniocaires.github.io/"})
 	@PatchMapping("{id}/done")
 	public Todo markAsDone(@PathVariable Long id) {
 		return repository.findById(id).map(todo -> {
